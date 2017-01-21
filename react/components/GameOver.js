@@ -2,18 +2,30 @@ import React from 'react';
 
 const GameOver = (props) => {
   let winner;
-  let tie;
+  let tie = [];
   let highestScore = 0;
+  let result;
   props.players.forEach(function (player) {
     if (player.points > highestScore) {
+      debugger;
       highestScore = player.points;
       winner = player;
+      tie = [];
     }
     else if (player.points == highestScore) {
-      tie = player;
+      debugger;
+      tie.push(player.name);
     }
   });
-  let result = `${winner.name} wins!`
+  if (tie.length > 0) {
+    let names = tie.slice(0, tie.length - 1).join(', ') + ', and ' + tie.slice(-1);
+    result = `${names} tied!`;
+    debugger;
+  }
+  else {
+    result = `${winner.name} wins!`;
+    debugger;
+  }
 
   let players = props.players.map((player) => {
     return (
@@ -21,9 +33,9 @@ const GameOver = (props) => {
     );
   });
   return (
-    <div class="game-over">
-      <h2>Game Over!</h2>
-      <p>{winner.name} wins!</p>
+    <div className="game-over">
+      <h2>Game Over</h2>
+      <p>{result}</p>
       <h4>Final Scores</h4>
       <ul>{players}</ul>
     </div>

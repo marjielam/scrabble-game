@@ -164,6 +164,7 @@ class App extends Component {
   }
 
   endGame() {
+    this.state.currentPlayer.points += this.state.currentScore;
     this.setState({ gameOver: true });
   }
 
