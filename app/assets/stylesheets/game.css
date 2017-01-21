@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  background-color: #AED9E0;
+  font-family: Open Sans;
+}
+
+.game-setup {
+  width: 500px;
+  height: 500px;
+  margin: 100px auto;
+  padding: 20px;
+  font-size: 25px;
+  background-color: #7B435B;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3, h6 {
+  display: inline;
+  padding: 4px;
+}
+
+h5, h4 {
+  margin: none;
+  padding: none;
+}
+
+label {
+  color: white;
+  font-size: 20px;
+  text-align: left;
+}
+
+.start-game, .next, .end-game {
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #F0F8F9;
+  color: black;
+  border: none;
+}
+
+.end-game {
+  font-size: 20px;
+  margin: none;
+  padding: 10px;
+  background-color: #F0F8F9;
+  color: black;
+  float: right;
+  border: none;
+}
+
+.square {
+  height: 55px;
+  width: 55px;
+  border: 3px solid #442532;
+  font-size: 20px;
+  padding: 3px;
+  text-align: center;
+  background-color: #F0F8F9;
+}
+
+.board {
+  margin: 20px;
+  width: 900px;
+  height: 900px;
+}
+
+.dashboard {
+  /*margin: 20px;*/
+  background-color: #8FB2B8;
+  width: 500px;
+  padding: 10px;
+}
+
+.dashboard-piece {
+  width: 90px;
+  height: 90px;
+  background-color: #8FB2B8;
+ }
+
+.piece {
+  background-color: Wheat;
+  width: 60px;
+  height: 60px;
+  padding: auto;
+  text-align: center;
+  font-size: 30px;
+}
+
+table {
+  width: 100%;
+}
+
+.selected {
+  background-color: #706677;
+}
+
+.scores {
+  padding: 10px;
+  color: #F0F8F9;
+}
+
+.game-over {
+  text-align: center;
+}
